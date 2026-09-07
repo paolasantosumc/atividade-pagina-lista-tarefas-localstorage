@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="todo-card">
+            <header class="header">
+                <span class="icon">✓</span>
+                <h1>Minha Lista</h1>
+                <p>Organize suas tarefas do dia</p>
+            </header>
+            <form id="taskForm" class="task-form">
+                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa..." autocomplete="off" required>
+                <button type="submit" class="btn-add">Adicionar</button>
+            </form>
+            <div class="task-info">
+                <span id="taskCount">0 tarefas</span>
+                <button id="clearAll" class="btn-clear">Limpar todas</button>
+            </div>
+            <ul id="taskList" class="task-list"></ul>
+            <div id="emptyMessage" class="empty-message">
+                <span>📝</span>
+                <p>Nenhuma tarefa cadastrada.</p>
+                <small>Adicione uma tarefa para começar!</small>
+            </div>
+            <footer>Desenvolvido por Paola Santos</footer>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
